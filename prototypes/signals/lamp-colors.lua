@@ -30,7 +30,7 @@ local colors = {
 }
 
 for name, signal in pairs(data.raw['virtual-signal']) do
-    if signal.order:find('colors') then
+    if signal.order and signal.order:find('colors') then
         data.raw['virtual-signal'][name] = nil
     end
 end
