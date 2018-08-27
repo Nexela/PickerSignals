@@ -3,8 +3,8 @@
 -------------------------------------------------------------------------------
 -- From: "Expanded Color Lamps", by: "Klonan"
 
-local Data = require('__stdlib__/data/data')
-local Color = require('__stdlib__/color/color')
+local Data = require('__stdlib__/stdlib/data/data')
+local Color = require('__stdlib__/stdlib/utils/color')
 
 if not settings.startup['picker-better-lamp-colors'].value then
     return
